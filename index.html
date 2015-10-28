@@ -2,12 +2,162 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <!-- custom styles -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   <title></title>
 </head>
 <body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1024px-Airbnb_Logo_Bélo.svg.png" style="height: 100%"></a>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav">
+	        
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+		      <li id="host"><a href="#">Become A Host</a></li>
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Help <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Getting Started</a></li>
+		            <li><a href="#">How does Airbnb process payment?</a></li>
+		            <li><a href="#">Can I change confirmed reservation?</a></li>
+		          </ul>
+		        </li>
+	        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 
+	<div class="jumbotron">
+      <div class="container">
+        <h1>WELCOME HOME</h1>
+        <p id="subtitle">Rent from people in over 34,000 cities and 192+ countries.</p>
+        <div class="how-btn">
+        	<p>How It Works</p>
+        </div>
+		<div class="form-group search-bar">
+      		<input type="text" class="form-control" id="where-to" placeholder="Where do you want to go?">
+      		<input type="text" class="form-control" id="check-in" placeholder="Check In">
+      		<input type="text" class="form-control" id="check-out" placeholder="Check Out">
+      		<input type="text" class="form-control" id="total-guests" placeholder="No. Guests">
+      		<button type="button" class="btn btn-danger" id="search">Search</button>
+    	</div>
+      </div>
+    </div>
+
+    <div class="world-guides">
+    	<div class="container">
+    		<h2 style="font-size: 36px">Explore the World</h2>
+    		<p style="font-size: 18px">See where people are travelling.</p>
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="thumbnail">
+    					<img src="http://goo.gl/0sX3jq">
+    				</div>
+    				<div class="thumbnail">
+    					<img src="http://goo.gl/an2HXY">
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="thumbnail">
+    					<img src="http://goo.gl/Av1pac">
+    				</div>
+    				<div class="thumbnail">
+    					<img src="http://goo.gl/vw43v1">
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="thumbnail">
+    					<img src="http://goo.gl/0Kd7UO">
+    				</div>
+    			</div>
+    		</div>
+    		<button type="button" class="btn btn-default" id="see-all">See All Destinations</button>
+    	</div>
+    </div>
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+    				<div class="dropdown">
+  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language<span class="caret"></span>
+  						</button>
+  						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">English</a></li>
+						    <li><a href="#">French</a></li>
+						    <li><a href="#">Korean</a></li>
+						    <li><a href="#">Japanese</a></li>
+						    <li><a href="#">Spanish</a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Currency<span class="caret"></span>
+  						</button>
+  						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">USD</a></li>
+						    <li><a href="#">EUR</a></li>
+						    <li><a href="#">WON</a></li>
+						    <li><a href="#">YEN</a></li>
+						    <li><a href="#">PESO</a></li>
+						</ul>
+					</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="footer-links">
+    					<h4>Company</h4>
+	    				<ul>
+	    					<li><a href="#">About</a></li>
+	    					<li><a href="#">Career</a></li>
+	    					<li><a href="#">Press</a></li>
+	    					<li><a href="#">Blog</a></li>
+	    					<li><a href="#">Help</a></li>
+	    					<li><a href="#">Policies</a></li>
+	    					<li><a href="#">Disaster Response</a></li>
+	    					<li><a href="#">Terms & Privacy</a></li>
+	    				</ul>
+    				</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="footer-links">
+    					<h4>Discover</h4>
+	    				<ul>
+	    					<li><a href="#">Trust & Safety</a></li>
+	    					<li><a href="#">Invite Friends</a></li>
+	    					<li><a href="#">Gift Cards</a></li>
+	    					<li><a href="#">Airbnb Picks</a></li>
+	    					<li><a href="#">Mobile</a></li>
+	    					<li><a href="#">Support NYC</a></li>
+	    					<li><a href="#">Business Travel</a></li>
+	    					<li><a href="#">Site Map</a></li>
+	    				</ul>
+    				</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="footer-links">
+    					<h4>Hosting</h4>
+	    				<ul>
+	    					<li><a href="#">Why Not</a></li>
+	    					<li><a href="#">Hospitality</a></li>
+	    					<li><a href="#">Responsive Hosting</a></li>
+	    					<li><a href="#">Home Safety</a></li>
+	    					<li><a href="#">Help</a></li>
+	    					<li><a href="#">Policies</a></li>
+	    					<li><a href="#">Disaster Response</a></li>
+	    					<li><a href="#">Terms & Privacy</a></li>
+	    				</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <p class="copy-right">© Airbnb, Inc.</p>
 </body>
 </html>
