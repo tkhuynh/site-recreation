@@ -5,7 +5,7 @@
 .navbar-right li {
 	padding: 0px 5px 0px 5px;
 }
-.jumbotron {
+.photo-body {
 	margin-top: -20px;
 	position: relative;
 	background-image:url('https://a0.muscache.com/airbnb/static/landing_pages/pretzel/slideshow/hero2-414b89b87b11fb3fbaa3915810bf6a72.jpg');
@@ -14,19 +14,19 @@
 	background-size: cover;
 }
 
-.jumbotron .container {
+.photo-body .container {
 	position: absolute;
     text-align: center;
     bottom: 10px;
 }
 
-.jumbotron h1 {
+.photo-body h1 {
     color: #fff;
     font-size: 48px;  
     font-family: 'Shift', sans-serif;
     font-weight: bold;
 }
-.jumbotron #subtitle {
+.photo-body #subtitle {
 	color: #fff;
     font-size: 20px;  
     font-family: 'Shift', sans-serif;
