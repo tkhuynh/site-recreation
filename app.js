@@ -12,4 +12,18 @@ $(document).ready(function() {
 			$(this).fadeIn(300);
 		});
 	});
+
+	$(".thumbnail").click(function(){
+        $(this).animate({
+            opacity: '0.5',
+            height: '+=40px',
+            width: '+=40px'
+        });
+        $(this).animate({
+            opacity: '1',
+            height: '-=40px',
+            width: '-=40px'
+        });
+    });
+    
 });
