@@ -6,4 +6,10 @@ $(document).ready(function() {
 		var guests = $("#total-guests").val();
 		confirm(guests + " guests traveling to " + place + " , check-in: " + checkIn + ", check-out: " + checkOut);
 	});
+
+	$("#logo").on("mouseenter",function(){ 
+		$(this).fadeOut(300,function(){
+			$(this).fadeIn(300);
+		});
+	});
 });
