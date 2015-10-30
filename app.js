@@ -25,5 +25,17 @@ $(document).ready(function() {
             width: '-=40px'
         });
     });
-    
+
+    var scrollCount = 0;
+	$(window).scroll(function(x) {
+		scrollCount++;
+		if (scrollCount < 5) {
+			$('h1').animate({
+				fontSize : "+=5px"
+			});
+			$('h1').animate({
+				fontSize : "-=5px"
+			});
+		}
+	});
 });
