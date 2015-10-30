@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <title></title>
+  <script src="app.js"></script>
+  <title>Airbnb - Replica</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1024px-Airbnb_Logo_Bélo.svg.png" style="height: 100%"></a>
+	      <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/1024px-Airbnb_Logo_Bélo.svg.png" id="logo" style="height: 100%"></a>
 	    </div>
 	    <div>
 	      <ul class="nav navbar-nav">
@@ -35,19 +36,19 @@
 	</nav>
 
 	<div class="photo-body">
-      <div class="container">
+      <div class="center">
         <h1>WELCOME HOME</h1>
         <p id="subtitle">Rent from people in over 34,000 cities and 192+ countries.</p>
         <div class="how-btn">
         	<p>How It Works</p>
         </div>
-		<div class="form-group search-bar">
+		    <div class="form-group search-bar">
       		<input type="text" class="form-control" id="where-to" placeholder="Where do you want to go?">
       		<input type="text" class="form-control" id="check-in" placeholder="Check In">
       		<input type="text" class="form-control" id="check-out" placeholder="Check Out">
       		<input type="text" class="form-control" id="total-guests" placeholder="No. Guests">
       		<button type="button" class="btn btn-danger" id="search">Search</button>
-    	</div>
+    	   </div>
       </div>
     </div>
 
@@ -57,8 +58,9 @@
     		<p style="font-size: 18px">See where people are travelling.</p>
     		<div class="row">
     			<div class="col-md-4">
-    				<div class="thumbnail">
+    				<div class="thumbnail" id="mexico-city">
     					<img src="http://goo.gl/0sX3jq">
+
     				</div>
     				<div class="thumbnail">
     					<img src="http://goo.gl/an2HXY">
@@ -85,9 +87,9 @@
     <div class="footer">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-3">
+    			<div class="col-xs-3">
     				<div class="dropdown">
-  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Language<span class="caret"></span>
+  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 85px">Language<span class="caret"></span>
   						</button>
   						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						    <li><a href="#">English</a></li>
@@ -99,7 +101,7 @@
 					</div>
 
 					<div class="dropdown">
-  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Currency<span class="caret"></span>
+  						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 85px">Currency<span class="caret"></span>
   						</button>
   						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						    <li><a href="#">USD</a></li>
@@ -110,7 +112,7 @@
 						</ul>
 					</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-xs-3">
     				<div class="footer-links">
     					<h4>Company</h4>
 	    				<ul>
@@ -125,7 +127,7 @@
 	    				</ul>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-xs-3">
     				<div class="footer-links">
     					<h4>Discover</h4>
 	    				<ul>
@@ -140,7 +142,7 @@
 	    				</ul>
     				</div>
     			</div>
-    			<div class="col-md-3">
+    			<div class="col-xs-3">
     				<div class="footer-links">
     					<h4>Hosting</h4>
 	    				<ul>
@@ -158,6 +160,10 @@
     		</div>
     	</div>
     </div>
-    <p class="copy-right">© Airbnb, Inc.</p>
+    <div class="container">
+      <div class="row">
+        <p class="copy-right">© Airbnb, Inc.</p>
+      </div>
+    </div>
 </body>
 </html>

@@ -14,10 +14,9 @@
 	background-size: cover;
 }
 
-.photo-body .container {
-	position: absolute;
+.photo-body .center {
+	padding-top: 150px;
     text-align: center;
-    bottom: 10px;
 }
 
 .photo-body h1 {
